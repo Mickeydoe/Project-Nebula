@@ -1,0 +1,27 @@
+Project Nebula
+
+Login Page
+Dashboard (Users logged, no of users, timestamp for logging in to app, Nationality counts.)
+Adding new users section (Data: Full name, age,occupation,nationality,marital status, email address.)- To be stored in the DynamoDB
+Data Retrieval
+Thank you Notification for filling out form
+
+Automation
+The data represents information about a student in a dashboard system. Each student record includes:
+
+Basic Details:
+Includes the name, email, cohort (the group or class the student belongs to), and ranking (a numerical ranking of the student).
+
+Academic Performance Metrics:
+Consists of assignment_completion (the number of assignments completed) and attendance_average (the average attendance percentage).
+
+Weekly Attendance List:
+A detailed breakdown of weekly attendance. Each entry includes the week identifier, the number of days the student was present and absent.
+
+List of APIs
+GET "/api/health-check" - Health Check
+POST "/api/test-db-connection" - Test Database Connection
+GET "/api/students" - Get All Students
+POST "/api/student/[email]" - Get A Students Details
+GET "/api/cohort/stats/[cohort_name]" - Get Cohort Stats
+GET "/api/cohort/attendance/[cohort_name]" - Get Cohort attendance stats (Graph)
