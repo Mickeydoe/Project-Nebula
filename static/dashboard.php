@@ -18,6 +18,12 @@ $username = htmlspecialchars($_SESSION['username']);
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+<div class="slideshow-container">
+        <div class="slide" style="background-image: url('assets/background1.jpg');"></div>
+        <div class="slide" style="background-image: url('assets/background2.jpg');"></div>
+        <div class="slide" style="background-image: url('assets/background3.jpg');"></div>
+    </div>
+
     <header class="header">
         <div class="logo">🚀 Nebula - dock</div>
         <div class="user-info">
@@ -29,9 +35,9 @@ $username = htmlspecialchars($_SESSION['username']);
     <!-- Navigation Menu -->
     <nav class="menu">
         <ul>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Create New User</a></li>
-            <li><a href="#">View Users</a></li>
+            <li><a href="dashboard.php">Dashboard</a></li>
+            <li><a href="newuser.html">Create New User</a></li>
+            <li><a href="viewusers.html">View Users</a></li>
         </ul>
     </nav>
 
