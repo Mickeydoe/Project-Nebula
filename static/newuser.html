@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create New User</title>
     <link rel="stylesheet" href="newuser.css">
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div class="slideshow-container">
-        <div class="slide" style="background-image: url('assets/background1.jpg');"></div>
-        <div class="slide" style="background-image: url('assets/background2.jpg');"></div>
-        <div class="slide" style="background-image: url('assets/background3.jpg');"></div>
-    </div>
-
     <div class="container">
         <h2>Create User</h2>
         <form id="createUserForm">
@@ -45,12 +41,13 @@
                 <input type="text" id="occupation" name="occupation" required>
             </div>
             <div class="form-actions">
-                <button type="button" onclick="createUser()">Create User</button>
+                <button type="button" id="CreateUser">Create</button>
+                <p id="userSaved"></p>
                 <button type="reset">Reset</button>
             </div>
         </form>
     </div>
 
-    <script src="/scripts/newuser.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
