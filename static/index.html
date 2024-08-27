@@ -4,32 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AZUBI LOGIN</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Updated link -->
 </head>
 <body>
+    <header class="header">
+        <div class="logo">Nebula</div>
+        <div class="user-info">
+            <i class="fas fa-user"></i> <!-- FontAwesome icon -->
+            <span>Welcome, User</span>
+        </div>
+    </header>
 
     <div class="container">
         <div class="login-box">
             <h1>AZUBI LOGIN</h1>
             <form action="login.php" method="POST">
-                <!-- Input field for username -->
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
                 
-                <!-- Input field for password -->
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
 
-                <!-- Remember me checkbox -->
                 <div class="remember-me">
                     <input type="checkbox" id="remember" name="remember">
                     <label for="remember">Remember Me</label>
                 </div>
                 
-                <!-- Submit button for the form -->
                 <button type="submit">Submit</button>
 
-                <!-- Forgot password link -->
                 <div class="forgot-password">
                     <a href="#">Forgot Password?</a>
                 </div>
@@ -37,5 +39,10 @@
         </div>
     </div>
 
+    <footer class="footer">
+        &copy; 2024 YourCompany
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

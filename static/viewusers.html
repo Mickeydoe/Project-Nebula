@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Users</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Updated link -->
+</head>
+<body>
+    <header class="header">
+        <div class="logo">YourLogo</div>
+        <div class="user-info">
+            <i class="fas fa-user"></i> <!-- FontAwesome icon -->
+            <span>Welcome, User</span>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <h2 class="dashboard-header">View Users</h2>
+        <button id="getusers" class="btn btn-primary mb-3">Load Users</button>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered" id="userTable">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Nationality</th>
+                        <th>Age</th>
+                        <th>Marital Status</th>
+                        <th>Occupation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- User data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2024 YourCompany
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom Script -->
+    <script>
+        var API_ENDPOINT = "https://p7gg6q99kk.execute-api.us-east-1.amazonaws.com/prod";
+        document.getElementById("getusers").onclick = function(){  
+            $.ajax({
+                url: API_ENDPOINT,
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                success: function (response) {
+                    $('#userTable tbody tr').remove();
+                    jQuery.each(response, function(i, data) {          
+                        $("#userTable tbody").append("<tr> \
+                            <td>" + data['FirstName'] + "</td> \
+                            <td>" + data['LastName'] + "</td> \
+                            <td>" + data['Email'] + "</td> \
+                            <td>" + data['Nationality'] + "</td> \
+                            <td>" + data['Age'] + "</td> \
+                            <td>" + data['MaritalStatus'] + "</td> \
+                            <td>" + data['Occupation'] + "</td> \
+                            </tr>");
+                    });
+                },
+                error: function () {
+                    alert("Error retrieving user data.");
+                }
+            });
+        }
+    </script>
+</body>
+</html>
