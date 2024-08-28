@@ -24,24 +24,21 @@ aws configure
 Installation
 Clone the Repository:
 
-bash
-Copy code
+## Installation
+
+### Clone the Repository
+```bash
 git clone https://github.com/yourusername/yourproject.git
 cd yourproject
-Install Dependencies: Ensure that boto3 and other dependencies are installed:
 
-bash
-Copy code
+
+```bash
 pip install -r requirements.txt
-Deploy AWS Lambda Function: Package and deploy your Lambda function using AWS CLI or the AWS Management Console. Make sure to set the appropriate IAM role that includes permissions for DynamoDB access.
 
 Run the Application: Once everything is set up, you can start the application by running the main script:
 
-bash
-Copy code
-python app.py
-Usage
-Login Form
+
+### Login Form
 The login form is designed with a modest, normal size to ensure the input fields are user-friendly. Custom CSS is used for better alignment and functionality.
 
 ### Saving Student Data
