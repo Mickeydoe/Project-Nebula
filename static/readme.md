@@ -22,3 +22,25 @@ Before running the application, ensure that the necessary IAM roles and permissi
 - **AWS CLI**: Set up AWS CLI on your local machine and configure it with your AWS credentials:
   ```bash
   aws configure
+## Installation
+
+### Clone the Repository
+Clone the repository to your local machine:
+```bash
+git clone https://github.com/yourusername/yourproject.git
+cd yourproject
+
+
+## Usage
+
+### Login Form
+The login form is designed with a modest, normal size to ensure the input fields are user-friendly. Custom CSS is used for better alignment and functionality.
+
+### Saving Student Data
+The application uses DynamoDB to store student data, including email addresses. Ensure that all required fields are validated and that data types match the schema in DynamoDB.
+
+### AWS Lambda Functions
+Lambda functions are used to handle backend logic, such as data processing and storage. Make sure your Lambda functions are correctly deployed and connected to your DynamoDB table.
+
+### Common Issues
+- **ValidationException**: If you encounter errors like `Type mismatch for key Email expected: S actual: NULL`, ensure all required attributes are provided and match the expected types in DynamoDB.
