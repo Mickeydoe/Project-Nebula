@@ -7,7 +7,12 @@ if (!isset($_SESSION['username'])) {
 }
 
 $username = htmlspecialchars($_SESSION['username']);
-$loginTime = isset($_SESSION['login_time']) ? $_SESSION['login_time'] : 'N/A';
+
+// Set login time if not already set
+if (!isset($_SESSION['login_time'])) {
+    $_SESSION['login_time'] = date("Y-m-d H:i:s");
+}
+$loginTime = $_SESSION['login_time'];
 
 // Fetch user count from the Lambda function via API Gateway
 $api_url = "https://njg5vbjhkc.execute-api.us-east-1.amazonaws.com/dev"; // Replace with your API Gateway URL
@@ -16,7 +21,11 @@ $user_count = "N/A";
 try {
     $response = file_get_contents($api_url);
     $data = json_decode($response, true);
-    $user_count = $data['user_count'];
+    if (isset($data['user_count'])) {
+        $user_count = $data['user_count'];
+    } else {
+        $user_count = "No user count data";
+    }
 } catch (Exception $e) {
     // Handle error
     $user_count = "Error fetching user count";
