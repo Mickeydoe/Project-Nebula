@@ -53,7 +53,7 @@ try {
 </head>
 <body>
     <header class="header">
-        <div class="logo">🚀 Nebula - dock</div>
+        <div class="logo">🚀 Nebula</div>
         <div class="user-info">
             <i class="fas fa-user-circle"></i>
             <span>Welcome, <?php echo $username; ?></span>
