@@ -9,28 +9,28 @@
 <body>
     <header class="header">
         <div class="logo">Nebula</div>
-        <div class="user-info">
-            <i class="fas fa-user"></i> <!-- FontAwesome icon -->
-            <span>Welcome, User</span>
-        </div>
     </header>
 
-    <div class="container">
+    <div class="login-container">
         <div class="login-box">
             <h1>AZUBI LOGIN</h1>
             <form action="login.php" method="POST">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
                 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
 
                 <div class="remember-me">
                     <input type="checkbox" id="remember" name="remember">
                     <label for="remember">Remember Me</label>
                 </div>
                 
-                <button type="submit">Submit</button>
+                <button type="submit" class="login-btn">Login</button>
 
                 <div class="forgot-password">
                     <a href="#">Forgot Password?</a>
@@ -40,7 +40,7 @@
     </div>
 
     <footer class="footer">
-        &copy; 2024 YourCompany
+        &copy; 2024 🚀Nebula
     </footer>
 
     <script src="script.js"></script>

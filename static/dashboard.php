@@ -73,7 +73,7 @@ try {
     <main class="dashboard">
         <div class="dashboard-header">
             <h2>Student Dashboard</h2>
-            <p>Number of users: <?php echo $user_count; ?></p>
+            <p><strong>Number of users: <?php echo $user_count; ?></p><strong>
         </div>
 
         <!-- Announcements or Recent Activities Section -->

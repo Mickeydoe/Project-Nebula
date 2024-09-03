@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #1f4037, #99f2c8); /* Gradient background */
+    color: #333;
     margin: 0;
     padding: 0;
 }
@@ -58,4 +59,28 @@ button[type="button"] {
 button[type="reset"] {
     background-color: #dc3545;
     color: white;
+}
+.menu {
+    background-color: #16222A; /* Dark background for menu */
+    padding: 15px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: #3a7bd5; /* Hover effect */
+    border-radius: 5px;
 }
