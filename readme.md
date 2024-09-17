@@ -21,6 +21,7 @@ The architecture of this application integrates multiple AWS services:
 - **API Management**: API Gateway integrates the frontend with backend Lambda functions.
 - **Data Management**: DynamoDB provides low-latency, highly scalable data storage.
 - **Dockerized Deployment**: ECS and ECR are used to handle containerized applications, ensuring scalable deployment.
+![AZUBI FINAL PROJECT (1)](https://github.com/user-attachments/assets/72b4fcc5-b40e-455e-b9a7-c06ac3e29c94)
 
 ## **Technologies Used**
 - **AWS Lambda**
