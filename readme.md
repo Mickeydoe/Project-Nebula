@@ -7,6 +7,9 @@
 This project demonstrates a cloud-based architecture using AWS services to handle backend logic, API management, serverless computing, and secure data storage. The system is designed to handle user interactions, API requests, server-side processing, and cloud monitoring, ensuring scalability, security, and efficient deployment.
 
 ## **Architecture**
+
+![AZUBI FINAL PROJECT (1)](https://github.com/user-attachments/assets/72b4fcc5-b40e-455e-b9a7-c06ac3e29c94)
+
 The architecture of this application integrates multiple AWS services:
 - **AWS Lambda**: Handles the server-side processing and logic in a serverless environment.
 - **Amazon API Gateway**: Facilitates communication between the client and the Lambda functions through HTTP requests.
@@ -21,7 +24,6 @@ The architecture of this application integrates multiple AWS services:
 - **API Management**: API Gateway integrates the frontend with backend Lambda functions.
 - **Data Management**: DynamoDB provides low-latency, highly scalable data storage.
 - **Dockerized Deployment**: ECS and ECR are used to handle containerized applications, ensuring scalable deployment.
-![AZUBI FINAL PROJECT (1)](https://github.com/user-attachments/assets/72b4fcc5-b40e-455e-b9a7-c06ac3e29c94)
 
 ## **Technologies Used**
 - **AWS Lambda**
