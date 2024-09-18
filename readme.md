@@ -58,6 +58,14 @@ Ensure you have the following:
 
 ### **4. Monitoring and Logging**
 - Use **AWS CloudWatch** to monitor the performance of your Lambda functions, ECS containers, and overall system health.
+- 
+![LOGIN PAGE](https://github.com/user-attachments/assets/7d459f10-5970-441d-9670-73e12dfe9887)
+![Dashboard](https://github.com/user-attachments/assets/0bddb63f-2da7-42c5-aa9b-64f8c1b7a3ca)
+![CREATE USER PAGE](https://github.com/user-attachments/assets/df04058a-350a-45de-9e97-a732aecf26a6)
+![VIEW USER PAGE](https://github.com/user-attachments/assets/4762d514-e2dc-467f-8bb7-1a9d583b5f08)
+![WhatsApp Image 2024-09-15 at 21 23 50_aa2ba821](https://github.com/user-attachments/assets/e8aa8f09-3f1e-4260-a085-ad81188007be)
+![WhatsApp Image 2024-09-15 at 21 23 50_79eda265](https://github.com/user-attachments/assets/056020d8-a6cf-4dc6-95a9-1d64279e237b)
+
 
 ## **Contributing**
 Feel free to submit a pull request or open an issue if you have any suggestions for improving the project.
